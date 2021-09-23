@@ -73,18 +73,17 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-HI {}, MY NAME IS {}! 
-I AM A  POWERFULL  GROUP MANAGEMENT BOT. YOU CAN FIND MY LIST OF AVAILABLE COMMANDS WITH /help.
+Hi {}, my name is {}! 
+I am a  Powerfull  group management bot. You can find my list of available commands with /help.
 """
 G_START_TEXT = """
-
-HELLO BLAZEBOT IS IN THE CHAT.
-UPTIME - {}!
+Hello PglRobot Is In The Chat.
+Uptime - {}!
 """
 
 HELP_STRINGS = """
-HEY THERE! MY NAME IS *{}*.
-I'M a Heroine For Fun and help admins to manage their groups! Have a look at the following for an idea of some of \
+Hey there! My name is *{}*.
+I'm a Heroine For Fun and help admins to manage their groups! Have a look at the following for an idea of some of \
 the things I can help you with.
 *Main* commands available:
  • /help: PM's you this message.
@@ -102,14 +101,14 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-PglRobot_IMG = "https://telegra.ph/file/1c7c9971eee32065cf7f8.jpg"
+PglRobot_IMG = "https://telegra.ph/file/f1d7b30b05ba9f0dbf4e5.jpg"
 
-PglRobotG_IMG = "https://telegra.ph/file/1c7c9971eee32065cf7f8.jpg"
+PglRobotG_IMG = "https://telegra.ph/file/e8881931bc000c75e8f13.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting
- Using 
-.
+ You can support the project by contacting [Gaurav Verma](https://t.me/iisgaurav).
+ Using [PayPal](paypal.me/iisgaurav).
+ Those who cannot provide monetary support are welcome to help us develop the bot at @VegaCodes.
  """
 
 IMPORTED = {}
@@ -228,7 +227,7 @@ def start(update: Update, context: CallbackContext):
                         [
                             InlineKeyboardButton(
                                 text="ADD ME IN YOUR GROUP ⚡️",
-                                url="t.me/LUCY_MANAGER_bot?startgroup=true".format(
+                                url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
                             ),
@@ -240,13 +239,13 @@ def start(update: Update, context: CallbackContext):
                             ),
                             InlineKeyboardButton(
                                 text="UPDATES ⚡️",
-                                url="https://t.me/legenduser2",
+                                url="https://t.me/VCUpdates",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="CHAT HUB ⚡️",
-                                url="https://t.me/Mafia_chat_g",
+                                text="SOURCE CODE ⚡️",
+                                url="https://github.com/iisgaurav/PglRobot",
                             ),
                         ],
                     ]
